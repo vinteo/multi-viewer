@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router';
 import type { Route } from '../layouts/+types/2x2';
-import { Youtube } from '../../screen/youtube';
+import { Screen } from '../../screen/screen';
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -24,25 +24,25 @@ export default function Home() {
       {showHome && (
         <NavLink
           to="/"
-          className={`absolute z-99 top-0 left-0 p-4 bg-blue-500 text-white`}
+          className="absolute z-99 top-0 left-0 p-4 bg-blue-500 text-white cursor-pointer"
         >
           Home
         </NavLink>
       )}
       <div className="flex-1 h-screen">
         <div className="h-1/2 bg-gray-100">
-          <Youtube />
+          <Screen />
         </div>
         <div className="h-1/2 bg-gray-200">
-          <Youtube />
+          <Screen />
         </div>
       </div>
       <div className="flex-1 h-screen">
         <div className="h-1/2 bg-gray-300">
-          <Youtube />
+          <Screen />
         </div>
         <div className="h-1/2 bg-gray-400">
-          <Youtube />
+          <Screen />
         </div>
       </div>
     </main>
