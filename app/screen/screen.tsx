@@ -59,7 +59,7 @@ export function Screen() {
               type="text"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
-              placeholder="Enter a YouTube URL"
+              placeholder="Enter a stream URL"
               className="flex-1 p-4 text-black border border-indigo-600"
             />
             <button
